@@ -11,7 +11,6 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/v1")
 public class UuidGeneratorController {
-
     @GetMapping("api")
     public ModelAndView generate(HttpServletRequest request){
         ModelAndView mv=new ModelAndView();
