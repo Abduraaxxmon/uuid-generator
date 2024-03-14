@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/v1")
+@RequestMapping("/")
 public class UuidGeneratorController {
-    @GetMapping("api")
+    @GetMapping()
     public ModelAndView generate(HttpServletRequest request){
         ModelAndView mv=new ModelAndView();
         mv.setViewName("uuidpage");
